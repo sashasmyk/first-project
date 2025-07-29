@@ -17,10 +17,21 @@
         }
         h1 {
             font-size: 2.5rem;
+            cursor: pointer;
+        }
+        .inverted {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
+    <h1 onclick="toggleColors()">HELLO WORLD</h1>
+
+    <script>
+        function toggleColors() {
+            document.body.classList.toggle('inverted');
+        }
+    </script>
 </body>
 </html>
